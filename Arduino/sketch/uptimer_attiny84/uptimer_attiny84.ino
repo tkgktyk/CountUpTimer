@@ -1,3 +1,8 @@
+/*
+ * Copyright (C) 2015 Takagi Katsuyuki
+ *
+ * Licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+ */
 
 #include <Arduino.h>
 #include <Metro.h>
@@ -47,11 +52,11 @@ void loop() {
   timer.loop();
   if (timer.isWarning()) {
     alarm.start(NOTE_C3, 333, 3);
-  } 
+  }
   else {
     if (timer.expired()) {
       alarm.start(NOTE_C7, 100, 5);
-    } 
+    }
     else {
       alarm.stop();
     }
@@ -100,8 +105,3 @@ void loop() {
 
   displayTimerCount();
 }
-
-
-
-
-

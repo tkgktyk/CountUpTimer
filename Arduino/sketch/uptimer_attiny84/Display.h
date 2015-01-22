@@ -1,3 +1,8 @@
+/*
+* Copyright (C) 2015 Takagi Katsuyuki
+*
+* Licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+*/
 
 #ifndef Display_h_
 #define Display_h_
@@ -18,7 +23,7 @@ public:
   }
 
   void setup() {
-    _lcd.begin(8, 2);  
+    _lcd.begin(8, 2);
     _lcd.setCursor(0, ROW_TIMER);
     _lcd.print("T  00:00");
     _lcd.setCursor(0, ROW_ALARM);
@@ -27,7 +32,7 @@ public:
 
 private:
   void printTime(int time, byte row) {
-    if (_time[row] == time) { 
+    if (_time[row] == time) {
       return;
     }
     _time[row] = time;
@@ -67,4 +72,3 @@ public:
 };
 
 #endif
-

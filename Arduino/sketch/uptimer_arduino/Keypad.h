@@ -1,3 +1,8 @@
+/*
+* Copyright (C) 2015 Takagi Katsuyuki
+*
+* Licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+*/
 
 #ifndef Keypad_H_
 #define Keypad_H_
@@ -56,7 +61,7 @@ private:
     delay(1); // delay 1ms
     if (key != readKey()) {
       return NONE;
-    } 
+    }
     else {
       return key;
     }
@@ -67,7 +72,7 @@ public:
     byte RESET_key = readPressKey();
     if (RESET_key == NONE){
       _pushed = _pressed;
-    } 
+    }
     else {
       _pushed = NONE;
     }
@@ -80,4 +85,3 @@ public:
 };
 
 #endif
-

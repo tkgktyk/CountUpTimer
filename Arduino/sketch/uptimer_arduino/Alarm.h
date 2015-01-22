@@ -1,3 +1,8 @@
+/*
+* Copyright (C) 2015 Takagi Katsuyuki
+*
+* Licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+*/
 
 #ifndef Alarm_H_
 #define Alarm_H_
@@ -105,7 +110,7 @@ private:
   boolean _beep;
 
 public:
-  Alarm(byte dpin) : 
+  Alarm(byte dpin) :
   _metro() {
     _dpin = dpin;
     _count = 0;
@@ -136,7 +141,7 @@ public:
         ++_count;
         if (_count >= _n) {
           _count = 0;
-        } 
+        }
         else {
           tone(_dpin, _freq, _duration);
         }
@@ -147,4 +152,3 @@ public:
 };
 
 #endif
-

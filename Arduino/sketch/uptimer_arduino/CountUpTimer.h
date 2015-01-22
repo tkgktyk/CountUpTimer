@@ -1,3 +1,8 @@
+/*
+* Copyright (C) 2015 Takagi Katsuyuki
+*
+* Licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+*/
 
 #ifndef CountUpTimer_h_
 #define CountUpTimer_h_
@@ -58,7 +63,7 @@ public:
       // if time isn't up yet, stop counting. Otherwise, stop alarm only.
       if (_expired) {
         _expired = false;
-      } 
+      }
       else {
         _isCounting = false;
         _isWarning = false;
@@ -91,11 +96,3 @@ public:
 };
 
 #endif
-
-
-
-
-
-
-
-
